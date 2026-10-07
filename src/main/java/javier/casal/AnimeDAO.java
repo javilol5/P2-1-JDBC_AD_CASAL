@@ -65,6 +65,40 @@ public class AnimeDAO {
         }
     }//CASAL
 
+
+    // READ - Filtrado
+    public void lerFiltrado(String nome) {
+
+        String sql = "SELECT * FROM anime WHERE nome = ?";
+
+        try {
+            Connection conn = conexion.conexion();
+
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setString(1, nome);
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                System.out.println(
+                        "Nome: " + rs.getString("nome") +
+                                " | Descripcion: " + rs.getString("descripcion") +
+                                " | Data: " + rs.getDate("data") +
+                                " | Puntuacion: " + rs.getInt("puntuacion")
+                );
+            }
+
+            rs.close();
+            ps.close();
+            conn.close();
+
+        } catch (SQLException e) {
+            System.out.println("Erro ao buscar: " + e.getMessage());
+        }
+    }//CASAL
+
     // UPDATE - Actualizar un anime
     public void actualizar(String nome, String descripcion, String data, int puntuacion) {
 
