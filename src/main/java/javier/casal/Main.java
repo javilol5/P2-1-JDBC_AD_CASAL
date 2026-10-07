@@ -15,7 +15,7 @@ public class Main {
                 "1999-10-20",
                 95
         );
-
+//CASAL
 
         // LEER TODOS
         System.out.println();
@@ -23,7 +23,7 @@ public class Main {
 
         dao.lerTodos();
 
-
+//CASAL
         // ACTUALIZAR
         System.out.println();
         System.out.println("===== ACTUALIZAR REXISTRO =====");
@@ -34,7 +34,7 @@ public class Main {
                 "1999-10-20",
                 99
         );
-
+//CASAL
 
         // ELIMINAR
         System.out.println();
@@ -42,7 +42,7 @@ public class Main {
 
         dao.eliminar("One Piece");
 
-
+//CASAL
         // LEER TODOS DE NUEVO
         System.out.println();
         System.out.println("===== LER TODOS OS REXISTROS =====");

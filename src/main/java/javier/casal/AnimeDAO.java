@@ -31,7 +31,7 @@ public class AnimeDAO {
         } catch (SQLException e) {
             System.out.println("Error al insertar: " + e.getMessage());
         }
-    }
+    }//CASAL
 
 
     // READ - Leer todos los animes
@@ -63,7 +63,7 @@ public class AnimeDAO {
         } catch (SQLException e) {
             System.out.println("Erro ao ler: " + e.getMessage());
         }
-    }
+    }//CASAL
 
     // UPDATE - Actualizar un anime
     public void actualizar(String nome, String descripcion, String data, int puntuacion) {
@@ -90,7 +90,7 @@ public class AnimeDAO {
         } catch (SQLException e) {
             System.out.println("Error al actualizar: " + e.getMessage());
         }
-    }
+    }//CASAL
 
 
     // DELETE - Eliminar un anime
@@ -114,6 +114,6 @@ public class AnimeDAO {
 
         } catch (SQLException e) {
             System.out.println("Error al eliminar: " + e.getMessage());
-        }
+        }//CASAL
     }
 }

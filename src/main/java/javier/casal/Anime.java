@@ -14,7 +14,7 @@ public class Anime {
         this.descripcion = descripcion;
         this.data = data;
         this.puntuacion = puntuacion;
-    }
+    }//CASAL
 
 
 
